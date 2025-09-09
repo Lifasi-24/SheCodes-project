@@ -1,0 +1,85 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/173/299/original/pexels-pixabay-209831.jpg?1757109078");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.weather-container {
+  background-color: rgb(48, 108, 110, 0.8);
+  margin: 50px auto;
+  padding: 35px;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+.search-container {
+  padding: 10px 10px 30px 10px;
+  border-bottom: 1px solid rgba(50, 99, 100, 0.8);
+}
+.search-input {
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 10px;
+  background-color: #e4f1fe;
+  width: 70%;
+}
+.submit-input {
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  padding: 7px;
+  background-color: #d5def5;
+  width: 20%;
+}
+.text-input:hover {
+  cursor: pointer;
+  background-color: #d5def5;
+}
+.search-input:hover {
+  cursor: pointer;
+  background-color: #e4f1fe;
+}
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.current-city {
+  font-size: 38px;
+  margin-bottom: 0;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.current-temperature {
+  color: #0b0725;
+}
+.current-temperature-value,
+.current-temperature-icon {
+  font-size: 50px;
+}
+.current-temperature-degree {
+  position: relative;
+  top: -21px;
+  margin-left: 3px;
+  font-size: 20px;
+}
+.current-weather-details {
+  font-size: 17px;
+  line-height: 1.2;
+  opacity: 0.8;
+  position: relative;
+  bottom: -25px;
+}
+.current-app-details strong {
+  color: rgb(37, 37, 92);
+}
+a {
+  color: #bcc7e2;
+}
+footer {
+  margin-top: 50px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 13px;
+}

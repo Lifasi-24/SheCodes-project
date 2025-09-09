@@ -4,26 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Weather Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Tagesschrift&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter city..." required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>East London</h1>
-        <span>🌤️16&deg;C</span>
-      </div>
-      <div>
-        <p>
-          <span> Monday 14:50</span>, <span>Partly Cloudy</span> <br />
-          Humidity: <strong>60%</strong> ,Wind: <strong>27km/h</strong>
-        </p>
-      </div>
-    </main>
+    <div class="weather-container">
+      <header class="search-container">
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter city..."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="submit-input" />
+        </form>
+      </header>
+      <main class="current-weather">
+        <div class="current-temperature">
+          <h1 class="current-city" id="current-city">East London</h1>
+          <span class="current-temperature-icon">🌤️</span>
+          <span class="current-temperature-value" id="current-temperature-value"
+            ><strong>16</strong></span
+          ><span class="current-temperature-degree">&deg;C</span>
+        </div>
+        <div class="current-weather-details">
+          <p class="current-app-details">
+            <span id="current-date"> Monday 14:50</span>,
+            <span id="current-condition">Partly Cloudy</span> <br />
+            Humidity: <strong>60%</strong> ,Wind: <strong>27km/h</strong>
+          </p>
+        </div>
+      </main>
+    </div>
     <footer>
       This was coded by
       <a href="https://github.com/Lifasi-24" target="_blank">Lifasi Muavha</a>,
