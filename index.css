@@ -57,6 +57,7 @@ body {
 .current-temperature-value,
 .current-temperature-icon {
   font-size: 50px;
+  font-weight: bold;
 }
 .current-temperature-degree {
   position: relative;
