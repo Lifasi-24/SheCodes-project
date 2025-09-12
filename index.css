@@ -5,7 +5,7 @@ body {
   background-size: cover;
 }
 .weather-container {
-  background-color: rgb(48, 108, 110, 0.8);
+  background-color: rgb(48, 108, 110, 0.7);
   margin: 50px auto;
   padding: 35px;
   max-width: 600px;
@@ -55,21 +55,22 @@ body {
   color: #0b0725;
 }
 .current-temperature-value {
-  font-size: 50px;
+  font-size: 60px;
+  line-height: 60px;
   font-weight: bold;
 }
 
 .current-temperature-icon {
-  width: 50px;
+  width: 70px;
+  height: 62px;
   position: relative;
   bottom: -10px;
 }
 
 .current-temperature-degree {
   position: relative;
-  top: -21px;
-  margin-left: 3px;
-  font-size: 20px;
+  top: -27px;
+  font-size: 22px;
 }
 .current-weather-details {
   font-size: 17px;
