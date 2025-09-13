@@ -99,7 +99,7 @@ body {
 }
 .weather-forecast-temperatures {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 10px;
   color: rgb(12, 12, 53);
 }

@@ -50,6 +50,29 @@ function searchCity(city) {
   axios.get(apiUrl).then(refreshWeather);
 }
 
+function displayForecast() {
+  let days = ["Mon", "Tue", "Wed", "Thur", "Fri"];
+  forecastHtml = " ";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="weather-forecast-day">
+          <div class="weather-forecast-date">${day}</div>
+          <div class="weather-forecast-icon">☀️</div>
+          <div class="weather-forecast-temperatures">
+            <div class="weather-forecast-temperature">
+              <strong>15&deg;</strong>
+            </div>
+            <div class="weather-forecast-temperature">19&deg;</div>
+          </div>
+        </div>`;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
 function displayCity(event) {
   event.preventDefault();
   let searchInputElement = document.querySelector("#search-input");
@@ -61,3 +84,4 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", displayCity);
 
 searchCity("Pretoria");
+displayForecast();
